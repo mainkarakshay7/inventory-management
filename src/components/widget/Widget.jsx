@@ -4,6 +4,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import CategoryIcon from "@mui/icons-material/Category";
+import Skeleton from "@mui/material/Skeleton";
 import "./widget.css";
 
 const Widget = (props) => {
@@ -43,11 +44,28 @@ const Widget = (props) => {
       value: distinctCategories.size,
     },
   ];
+
+  if (!inventory) {
+    return (
+      <Grid className='shimmer-root'>
+        {[0, 1, 2, 3].map((item, index) => (
+          <Skeleton
+            variant='rectangular'
+            width={"25%"}
+            height={130}
+            className='widget-shimmer'
+            key={index}
+          />
+        ))}
+      </Grid>
+    );
+  }
+
   return (
     <Grid container spacing={2}>
       {widgetObject.map((item, index) => (
         <Grid item xs={6} md={3} key={index}>
-          <Grid className='widget-container'>
+          <Grid className='widget-container' key={index}>
             <Grid>{item.icon}</Grid>
             <Grid className='widget-content'>
               <Typography>{item.name}</Typography>

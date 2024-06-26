@@ -7,6 +7,12 @@
   width: 100%;
 }
 
+.table-shimmer {
+  background-color: #212124 !important;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
 .table-root table tr:last-child {
   border-bottom: none;
 }

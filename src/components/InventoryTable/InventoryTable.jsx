@@ -13,6 +13,7 @@ import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import CustomDialog from "../CustomDialog/CustomDialog";
 import { TABLE_ROWS } from "../../constants";
 import Chip from "@mui/material/Chip";
+import Skeleton from "@mui/material/Skeleton";
 
 const InventoryTable = (props) => {
   const { inventory, setInventory, userMode } = props;
@@ -65,6 +66,19 @@ const InventoryTable = (props) => {
       )
     );
   };
+
+  if (!inventory) {
+    return (
+      <Grid className='table-shimmer'>
+        <Skeleton
+          variant='rectangular'
+          width={"100%"}
+          height={350}
+          animation='wave'
+        />
+      </Grid>
+    );
+  }
 
   return (
     <Grid className={userMode ? "table-root user-table-root" : "table-root"}>

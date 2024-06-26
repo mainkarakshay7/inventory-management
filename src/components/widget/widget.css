@@ -38,3 +38,13 @@
     padding: 10px;
   }
 }
+
+.widget-shimmer {
+  background-color: #243425 !important;
+  border-radius: 8px;
+}
+
+.shimmer-root {
+  display: flex;
+  gap: 10px;
+}
