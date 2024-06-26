@@ -1,0 +1,10 @@
+.admin-root {
+  background-color: black;
+  min-height: 120vh;
+  padding: 12px;
+}
+
+.admin-title {
+  margin-bottom: 16px !important;
+  color: #fff;
+}

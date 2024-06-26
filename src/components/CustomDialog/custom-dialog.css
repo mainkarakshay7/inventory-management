@@ -1,0 +1,51 @@
+.MuiDialog-paper {
+  background-color: #2a2b27 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
+
+.MuiDialog-paper p {
+  color: #fff !important;
+}
+
+.MuiDialogTitle-root {
+  padding-bottom: 0px !important;
+  color: #fff;
+  font-size: 32px !important;
+}
+
+.MuiDialogContentText-root {
+  padding: 5px 24px 10px;
+}
+.MuiInputBase-root {
+  border-radius: 10px !important;
+  background-color: #40413e;
+}
+
+.MuiInputBase-input {
+  color: #8e8f8d !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.MuiFormLabel-root {
+  color: #fff !important;
+  font-size: 16px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dialogue-root .MuiSvgIcon-root {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 40px;
+  color: #e5fd72;
+  cursor: pointer;
+}

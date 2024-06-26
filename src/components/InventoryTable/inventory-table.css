@@ -1,0 +1,42 @@
+.table-root {
+  background-color: #212124;
+  border-radius: 8px;
+  margin-top: 20px;
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+}
+
+.table-root table tr:last-child {
+  border-bottom: none;
+}
+
+.table-root table tr {
+  border-bottom: 2px solid #808080;
+}
+
+.table-root th,
+.table-root td {
+  color: white;
+}
+
+.user-table-root th,
+.user-table-root td {
+  color: grey !important;
+}
+
+.table-title {
+  color: #e5fd72 !important;
+  background-color: #000 !important;
+}
+
+.table-root .grey-text-row th,
+.table-root .grey-text-row td {
+  color: grey !important;
+}
+
+.icon-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

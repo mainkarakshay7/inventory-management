@@ -1,0 +1,40 @@
+.widget-container {
+  display: flex;
+  padding: 25px;
+  background-color: #243425;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.widget-content {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column !important;
+  gap: 5px;
+  width: 100%;
+  min-height: 94px;
+}
+
+.widget-content p {
+  font-size: 14px;
+}
+
+.widget-content p:last-child {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+@media (max-width: 390px) {
+  .widget-content p:last-child {
+    font-weight: 900;
+    font-size: 22px;
+  }
+
+  .widget-content p {
+    font-size: 12px;
+  }
+
+  .widget-container {
+    padding: 10px;
+  }
+}
