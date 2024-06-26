@@ -28,10 +28,6 @@ const InventoryTable = (props) => {
     value: "",
   });
 
-  if (!inventory) {
-    return null;
-  }
-
   const handleClose = () => {
     setOpen(false);
   };
