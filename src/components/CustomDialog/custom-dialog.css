@@ -41,6 +41,14 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.cancel-button {
+  color: #e5fd72 !important;
+}
+
+.submit-button {
+  color: #fff !important;
+}
+
 .dialogue-root .MuiSvgIcon-root {
   position: absolute;
   right: 20px;
